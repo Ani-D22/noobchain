@@ -10,7 +10,7 @@ import java.util.ArrayList;
 public class NoobChain {
 
     public static ArrayList<Block> blockchain = new ArrayList<Block>();
-    public static int difficulty = 6;
+    public static int difficulty = 4;
 
     public static void main(String[] args) throws NoSuchAlgorithmException {
 
@@ -18,11 +18,11 @@ public class NoobChain {
         System.out.println("Trying to Mine block 1... ");
         blockchain.get(0).mineBlock(difficulty);
 
-        blockchain.add(new Block("Yo, I am the second block!", "0" ));
+        blockchain.add(new Block("Yo, I am the second block!", blockchain.get(blockchain.size()-1).getHash()));
         System.out.println("Trying to Mine block 2... ");
         blockchain.get(1).mineBlock(difficulty);
 
-        blockchain.add(new Block("Ola, I am the third block!", "0" ));
+        blockchain.add(new Block("Ola, I am the third block!", blockchain.get(blockchain.size()-1).getHash()));
         System.out.println("Trying to Mine block 3... ");
         blockchain.get(2).mineBlock(difficulty);
 
