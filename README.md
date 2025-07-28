@@ -1,7 +1,7 @@
 # 🧱 Blockchain Demo (Java 8)
 
 This repository contains a simple **Blockchain implementation in Java 8** created to understand how blockchain works internally. It covers essential concepts like block creation, proof of work, hashing, and chain integrity — all without any external blockchain library.
-
+  
 ---
 
 ## 📌 Features
